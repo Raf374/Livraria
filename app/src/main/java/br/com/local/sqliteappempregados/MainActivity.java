@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (salario.isEmpty() || Integer.parseInt(salario) <= 0) {
-            txtSalarioEmpregado.setError("Por favor entre com o salário");
+            txtSalarioEmpregado.setError("Por favor entre com o valor");
             txtSalarioEmpregado.requestFocus();
             return false;
         }
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             meuBancoDeDados.execSQL(insertSQL, new String[]{nomeEmpr, deptoEmpr, dataEntrada, salarioEmpr});
 
-            Toast.makeText(getApplicationContext(), "Funcionário adicionado com sucesso!!!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "livro adicionado com sucesso!!!", Toast.LENGTH_SHORT).show();
 
             limparCadastro();
 
